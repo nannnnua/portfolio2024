@@ -40,48 +40,89 @@ h2 {font-size: 64px; font-weight: 600; line-height: 1.2; margin-bottom: 8px; tex
 #gnb ul li a {color: #fff; font-weight: 500; padding: 20px; transition: .3s;}
 #gnb ul li a:hover {font-weight: 700;}
 
-#hero {width: 100%; background: #111; color: #fff; font-size: 128px; position: relative;}
-#hero .wrap {position: relative;height: 100vh; padding-top: 90px;}
-#hero .row1 p {font-weight: 600; display: inline; margin-right: -24px;}
-#hero .row1 span {font-weight: 300; font-style: italic;}
 
-#hero .row2 {position: relative;} 
-#hero .row2 p {display: inline;}
-#hero .row2 .designer {font-weight: 200;}
-#hero .row2 span {margin-left: 12px; margin-right: 10px;}
-#hero .row2 b {font-weight: 400;}
+
+#hero {width: 100%; height: 100vh; color: #fff; font-size: 128px; position: relative;}
+#hero .wrap {position: relative;height: 100vh; padding-top: 90px;}
+#hero .hero_row1 p {font-weight: 600; display: inline; margin-right: -24px;}
+#hero .hero_row1 span {font-weight: 300; font-style: italic;}
+
+#hero .hero_row2 {position: relative; margin-bottom: 150px;} 
+#hero .hero_row2 p {display: inline;}
+#hero .hero_row2 .designer {font-weight: 200;}
+#hero .hero_row2 .designer img {margin-left: 12px; margin-right: 10px;}
+#hero .hero_row2 .designer span {font-weight: 400;}
+#hero .hero_row2 .cursor_name {position: absolute; top: 72px; right: 130px;}
 
 #hero .circles {display: flex;}
 #hero .circle {width: 200px; height: 200px; border-radius: 200px; border: 1px solid #ddd; margin-right: -160px;}
 #hero .circle:first-child {background: #ddd;}
 
-#hero .grid {height: 100%; display: flex; column-gap: 20px; position: absolute; top: 0;}
-#hero .grid .col {width: 75px; border-left: 1px solid #666; border-right: 1px solid #666;}
-/* #hero .row2 img {position: absolute;} */
+#hero .grid {height: 100%; display: flex; column-gap: 20px; position: absolute; top: 0; z-index: -1;}
+#hero .grid .col {width: 75px; border-left: 1px solid #333; border-right: 1px solid #333;}
+#hero .bg_black {width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: #111; z-index: -3;}
+/* #hero .hero_row2 img {position: absolute;} */
 
-.loop_banner {width: 100%; height: 36px; background: #E4FE7F; /*display: flex; align-items: center; column-gap: 36px;*/ line-height: 36px; overflow: hidden;}
-.banner_item {font-size: 14px; font-weight: 300; font-style: italic;}
+
+
+.marquee {width: 100%; height: 36px; background: #E4FE7F; font-size: 14px; font-weight: 300; font-style: italic; line-height: 36px; overflow: hidden;}
+
+#skills_sec {background: #111; height: 1058px; padding-top: 90px;}
+#skills_sec .wrap {position: relative;}
+#skills_sec p {font-size: 64px; color: #fff; margin-bottom: 73px;}
+#skills_sec p span {font-style: italic;}
+#skills_sec img {position: absolute; }
+#skills_sec .path1 {top: 220px; left: -106px;}
+#skills_sec .path2 {top: 123px; left: 208px; z-index: 2;}
+
+#skills_sec .skill_list {display: inline-block; font-size: 64px; font-weight: 700; line-height: 1.2; padding: 32px 64px; border-radius: 100px; position: absolute;}
+#skills_sec .skill_jq {background: #E7FD12; transform: rotate(14.067deg); top: 150px; left: 211px;}
+#skills_sec .skill_fig {background: #fff; transform: rotate(-28.516deg); top: 370px; left: -53px; z-index: 1;}
+#skills_sec .skill_ps {background: #FF40DD; transform: rotate(-7.039deg); top: 339px; left: 235px; color: #fff;}
+#skills_sec .skill_js {background: #fff; transform: rotate(39.865deg); top: 480px; left: 510px;}
+#skills_sec .skill_html {background: #A63FFD; transform: rotate(-27.78deg); top: 396px; left: 788px;}
+#skills_sec .skill_css {background: #00F35B; transform: rotate(28.949deg); top: 618px; left: 104px; z-index: 3;}
+#skills_sec .skill_ai {background: #4140FE; transform: rotate(12.529deg); top: 690px; left: 446px; z-index: 3; color: #fff;}
+
+#skills_sec .glass_heart {top: 44px; left: 720px; z-index: 4;}
+#skills_sec .glass_half {top: 664px; left: -56px;}
+#skills_sec .glass_star {top: 510px; left: 830px;}
+#skills_sec .cursor {top: 865px; left: 790px;}
 
 .cont4 {margin-bottom: 100px;}
 .cont4 .cont_right {overflow: hidden;}
 .cont4 .cont_right img {transition: .5s; object-fit: contain;}
 .cont4 .cont_right:hover img {transform: scale(1.05);}
 
-.contact {background: #f5f5f5; padding-top: 120px; position: relative;}
-.contact .wrap {width: 880px;}
+.contact {background: #f5f5f5; padding: 120px 0; position: relative;}
+.contact .wrap {width: 924px;}
 .contact .tape {position: absolute; left: 50%; transform: translateX(-50%); top: -50px;}
 .contact h2 {font-size: 128px; text-align: center; margin-bottom: 72px;}
 .contact h4 {font-size: 20px; font-weight: 600; margin-bottom: 20px;}
 .row1, .row2 {display: flex; column-gap: 117px;}
 
+.row1 {margin-bottom: 80px;}
 .row1 .cont_left h3 {font-size: 64px; font-weight: 600; line-height: 1; margin-bottom: 24px;}
 .row1 .cont_left h3 span {font-size: 12px; font-weight: 400; vertical-align: top; display: inline-block; margin-top: 4px; margin-left: 12px;}
 .row1 .cont_left p {width: 424px;}
 .row1 .cont_right p {font-size: 32px; font-weight: 500; margin-bottom: 6px;}
 
-.row2 .cont_left {width: 424px; height: 200px; background: salmon;}
+.row2 .cont_left {width: 430px; height: 200px; back ground: salmon;}
+.row2 .cont_left .list {position: relative;}
+.row2 .cont_left .list::before {content: ''; display: block; width: .5px; height: 158px; transform: scaleX(.5); background: #111; position: absolute; left: 21px; top: 20px;}
+.row2 .cont_left .item > li::before {content: url("../images/star.svg"); margin-right: 12px;}
+.row2 .cont_left .item > li {display: flex; align-items: start; margin-bottom: 24px;}
+.row2 .cont_left .item3 .text {margin-top: 4px;}
+.row2 .cont_left .item .year {font-size: 32px; font-weight: 600; margin-top: -6px; margin-right: 36px;}
+
 .row2 .cont_right ul {display: flex; gap: 18px;}
-.row2 .cont_right .top {width: 382px; margin-bottom: 75px;}
+.row2 .cont_right .top {width: 382px; margin-bottom: 50px;}
+
+
+#footer {background: #f5f5f5; border-top: 1px solid #111;}
+#footer .f_list {width: 1280px; margin: auto; display: flex; padding-top: 12px;}
+#footer .f_list a {display: inline-block; width: 210px; height: 280px; border-right: 1px solid #111; text-align: center; font-size: 24px; font-weight: 600; padding-top: 24px;}
+
 
 
 /* Sub Page */
