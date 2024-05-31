@@ -5,11 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>nannnnua's 2024</title>
 
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+
   <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <script src="./assets/js/jquery-3.7.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/marquee.js"></script>
-  <link rel="styles heet" href="./assets/js/main.js">
+
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Include jQuery Marquee plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js" type="text/javascript"></script>
+  <script src="./assets/js/main.js"></script>
 </head>
 <body>
   <header id="header">
@@ -41,7 +50,11 @@
         <div class="circle"></div>
         <div class="circle"></div>
         <div class="circle"></div>
+
+        <img src="./assets/images/cursor_comment.svg" alt="say somthing">
       </div>
+
+      <div class="gradient"></div>
 
       <div class="grid">
         <div class="col"></div>
@@ -84,8 +97,19 @@
     </div>
   </section>
   
-  <section class="loop_banner">
-    <div class="marquee">I'm looking for a job</div>
+  <section class="marquee">
+      <p>I'm looking for a job</p>
+      <p>I'm looking for a job</p>
+      <p>I'm looking for a job</p>
+      <p>I'm looking for a job</p>
+      <p>I'm looking for a job</p>
+      <p>I'm looking for a job</p>
+      <p>I'm looking for a job</p>
+      <p>I'm looking for a job</p>
+      <p>I'm looking for a job</p>
+      <p>I'm looking for a job</p>
+      <p>I'm looking for a job</p>
+      <p>I'm looking for a job</p>
   </section>
   
   <section id="portfolio" class="portfolio">
@@ -99,7 +123,9 @@
             <img src="./assets/images/arrow_right.svg" alt="더보기 버튼">
           </a>
         </div>
-        <div class="cont_right"><img src="./assets/images/dyson.png" alt="다이슨 이미지"></img></div>
+        <div class="cont_right">
+          <a href="./sub01.html" target="_blank"><img src="./assets/images/dyson.png" alt="다이슨 이미지"></img></a>
+        </div>
       </div>
 
       <div class="cont cont2">
@@ -111,7 +137,9 @@
             <img src="./assets/images/arrow_right.svg" alt="더보기 버튼">
           </a>
         </div>
-        <div class="cont_right"><img src="./assets/images/tamburins.png" alt="탬버린즈 이미지"></div>
+        <div class="cont_right">
+          <a href="#" target="_blank"><img src="./assets/images/tamburins.png" alt="탬버린즈 이미지"></a>
+        </div>
       </div>
 
       <div class="cont cont3">
@@ -123,7 +151,9 @@
             <img src="./assets/images/arrow_right.svg" alt="더보기 버튼">
           </a>
         </div>
-        <div class="cont_right"><img src="./assets/images/sony.png" alt="소니 이미지"></div>
+        <div class="cont_right">
+          <a href="#" target="_blank"><img src="./assets/images/sony.png" alt="소니 이미지"></a>
+        </div>
       </div>
 
       <div class="cont cont4">
@@ -135,7 +165,9 @@
             <img src="./assets/images/arrow_right.svg" alt="더보기 버튼">
           </a>
         </div>
-        <div class="cont_right"><img src="./assets/images/series.png" alt="시리즈 이미지"></div>
+        <div class="cont_right">
+          <a href="#" target="_blank"><img src="./assets/images/series.png" alt="시리즈 이미지"></a>
+        </div>
       </div>
     </div>
   </section>
@@ -223,42 +255,59 @@
 
   <footer id="footer">
     <ul class="f_list">
+      <li class="f_list_none">
+        <img src="./assets/images/ripped_paper.svg" alt="">
+      </li>
+      
       <li>
         <a href="https://github.com/nannnnua" target="_blank">
-          GITHUB
-          <img src="./assets/images/folder_github.png" alt="깃허브">
+          <p>GITHUB</p>
+          <img class="github_icon" src="./assets/images/folder_github.png" alt="깃허브">
         </a>
       </li>
       
       <li>
         <a href="https://www.behance.net/nannnnua" target="_blank">
-          BEHANCE
-          <img src="./assets/images/folder_behance.png" alt="비핸스">
+          <p>BEHANCE</p>
+          <img class="behance_icon" src="./assets/images/folder_behance.png" alt="비핸스">
         </a>
       </li>
       
       <li>
         <a href="#" target="_blank">
-          YOUTUBE
-          <img src="./assets/images/folder_youtube.png" alt="유튜브">
+          <p>YOUTUBE</p>
+          <img class="youtube_icon" src="./assets/images/folder_youtube.png" alt="유튜브">
         </a>
+      </li>
+
+      <li>
+        <a href="https://nannnnua.tistory.com/" target="_blank">
+          <p>BLOG</p>
+          <img class="blog_icon" src="./assets/images/folder_youtube.png" alt="유튜브">
+        </a>
+      </li>
+      
+      <li class="f_list_none">
+        <img src="./assets/images/ripped_paper.svg" alt="">
       </li>
       
       <li>
         <a href="#">
-          MAIL
-          <img src="./assets/images/folder_mail.png" alt="이메일">
+          <p>MAIL</p>
+          <img class="mail_icon" src="./assets/images/folder_mail.png" alt="이메일">
         </a>
       </li>
       
       <li>
         <a href="https://www.instagram.com/nanquis/" target="_blank">
-          INSTAGRAM
-          <img src="./assets/images/folder_instagram.png" alt="인스타그램">
+          <p>INSTAGRAM</p>
+          <img class="insta_icon" src="./assets/images/folder_instagram.png" alt="인스타그램">
         </a>
       </li>
 
-      <li class="f_list_none"></li>
+      <li class="f_list_none">
+        <img src="./assets/images/ripped_paper.svg" alt="">
+      </li>
       
     </ul>
   </footer>

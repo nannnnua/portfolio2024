@@ -1,9 +1,12 @@
-// https://www.jqueryscript.net/animation/Text-Scrolling-Plugin-for-jQuery-Marquee.html
-$('.marquee').marquee({
-    duration: 15000,
-    gap: 36,
+// https://github.com/aamirafridi/jQuery.Marquee
+$(document).ready(function() {
+  $('.marquee').marquee({
+    duration: 20000,
+    gap: 0,
     delayBeforeStart: 0,
-    direction: 'left',
+    direction: 'right',
     duplicated: true,
+    pauseOnHover: true,
     startVisible: true
   });
+});
