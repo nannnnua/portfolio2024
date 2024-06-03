@@ -141,12 +141,57 @@ h2 {font-size: 64px; font-weight: 600; line-height: 1.2; margin-bottom: 8px; tex
 
 #footer {background: #f5f5f5;}
 #footer .f_list {width: 100%; margin: auto; display: flex;}
-#footer .f_list li {width: 11.11%; height: 280px; border-top: 1px solid #111; padding-top: 12px; position: relative;}
+#footer .f_list li {width: 11.11%; height: 280px; border-top: 1px solid #111; padding-top: 12px;}
 #footer li.f_list_none {background: #ddd; border-top: none; position: relative;}
 #footer li.f_list_none img {width: 100%; position: absolute; top: -1px;}
-#footer .f_list a {display: inline-block; width: 100%; height: 100%; border-right: 1px solid #111; text-align: center; font-size: 24px; font-weight: 600;}
-#footer .f_list p {margin-top: 24px;}
-#footer .f_list img {position: absolute; bottom: 75px; left: 50%; transform: translateX(-50%);}
+#footer .f_list a {display: inline-block; width: 100%; height: 100%; border-right: 1px solid #111; text-align: center; font-size: 24px; font-weight: 600; display: flex; flex-direction: column; align-items: center;}
+#footer .f_list p {margin-top: 24px; margin-bottom: 20px;}
+
+#footer .folder {width: 160px; height: 160px; display: flex; justify-content: center; align-items: center;}
+#footer .wrap {width: 120px; height: 100px; position: relative;}
+#footer .default {position: absolute; bottom: 0; left: 0;}
+#footer .hover {opacity: 0;}
+#footer .hover img {position: absolute; bottom: 0;}
+#footer .hover .folder_f {right: 0; z-index: 3;}
+#footer .hover .icon {left: 50%; z-index: 2;}
+#footer .hover .folder_b {left: 0; z-index: 1;}
+#footer .f_list a:hover .default {opacity: 0;}
+#footer .f_list a:hover .hover {opacity: 1;}
+#footer .f_list a:hover .hover .icon {animation: icon_up 1s forwards;}
+
+@keyframes icon_up {
+  0% {
+    transform: translate(-50%, 0%);
+  }
+
+  16% {
+    transform: translate(-50%, -110%);
+  }
+
+  28% {
+    transform: translate(-50%, -66.88%);
+  }
+
+  44% {
+    transform: translate(-50%, -84.63%);
+  }
+
+  59% {
+    transform: translate(-50%, -78.36%);
+  }
+
+  73% {
+    transform: translate(-50%, -80.58%);
+  }
+
+  88% {
+    transform: translate(-50%, -79.8%);
+  }
+
+  100% {
+    transform: translate(-50%, -80%);
+  }
+}
 
 
 
