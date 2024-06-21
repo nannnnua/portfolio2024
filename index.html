@@ -12,11 +12,10 @@
   <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
 
   <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
 
   
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <!-- Include jQuery Marquee plugin -->
   <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js" type="text/javascript"></script>
   <script src="./assets/js/main.js"></script>
 </head>
@@ -32,7 +31,7 @@
   </header>
 
   <section id="hero">
-    <div class="wrap">
+    <div class="inner">
       <div class="hero_row1">
         <p>I'M <span>A</span></p>
         <img class="cursor_hello" src="./assets/images/cursor_hello.svg" alt="안녕하세요">
@@ -75,7 +74,7 @@
   </section>
 
   <section id="skills_sec">
-    <div class="wrap">
+    <div class="inner">
       <p>I <span>CAN</span></p>
 
       <img class="path1" src="./assets/images/path1.svg" alt="">
@@ -112,68 +111,82 @@
       <p>I'm looking for a job</p>
   </section>
   
-  <section id="portfolio" class="portfolio">
-    <div class="wrap">
-      <div class="cont cont1">
+  <section id="portfolio" class="sec-pf">
+    <div class="inner">
+      <div class="sec-pf-cont">
         <div class="cont_left">
           <h2>DYSON</h2>
           <p>STATIC WEB</p>
-          <a href="./work_dyson.html" target="_blank" class="more_btn">
+          <a href="./work_dyson.html" target="_blank" class="btn-more">
             VIEW MORE
             <img src="./assets/images/arrow_right.svg" alt="더보기 버튼">
           </a>
         </div>
         <div class="cont_right">
-          <a href="./work_dyson.html" target="_blank"><img src="./assets/images/dyson.png" alt="다이슨 이미지"></img></a>
+          <a href="./work_dyson.html" target="_blank"><img src="./assets/images/pf_dyson.png" alt="다이슨"></img></a>
         </div>
       </div>
 
-      <div class="cont cont2">
+      <div class="sec-pf-cont">
         <div class="cont_left">
           <h2>TAMBURINS</h2>
           <p>RESPONSIVE WEB</p>
-          <a href="./work_tamburins.html" target="_blank" class="more_btn">
+          <a href="./work_tamburins.html" target="_blank" class="btn-more">
             VIEW MORE
             <img src="./assets/images/arrow_right.svg" alt="더보기 버튼">
           </a>
         </div>
         <div class="cont_right">
-          <a href="./work_tamburins.html" target="_blank"><img src="./assets/images/tamburins.png" alt="탬버린즈 이미지"></a>
+          <a href="./work_tamburins.html" target="_blank"><img src="./assets/images/pf_tamburins.png" alt="탬버린즈"></a>
         </div>
       </div>
 
-      <div class="cont cont3">
+      <div class="sec-pf-cont">
+        <div class="cont_left">
+          <h2>FSS HOTEL</h2>
+          <p>STATIC WEB</p>
+          <a href="work_fsshotel.html" target="_blank" class="btn-more">
+            VIEW MORE
+            <img src="./assets/images/arrow_right.svg" alt="더보기 버튼">
+          </a>
+        </div>
+        <div class="cont_right">
+          <a href="work_fsshotel.html" target="_blank"><img src="./assets/images/pf_fourseasons.png" alt="포시즌스 호텔"></a>
+        </div>
+      </div>
+
+      <div class="sec-pf-cont">
         <div class="cont_left">
           <h2>SONY</h2>
           <p>RESPONSIVE WEB</p>
-          <a href="work_sony.html" target="_blank" class="more_btn">
+          <a href="work_sony.html" target="_blank" class="btn-more">
             VIEW MORE
             <img src="./assets/images/arrow_right.svg" alt="더보기 버튼">
           </a>
         </div>
         <div class="cont_right">
-          <a href="work_sony.html" target="_blank"><img src="./assets/images/sony.png" alt="소니 이미지"></a>
+          <a href="work_sony.html" target="_blank"><img src="./assets/images/pf_sony.png" alt="소니"></a>
         </div>
       </div>
 
-      <div class="cont cont4">
+      <div class="sec-pf-cont">
         <div class="cont_left">
           <h2>SERIES</h2>
           <p>GRAPHIC DESIGN</p>
-          <a href="./work_series.html" target="_blank" class="more_btn">
+          <a href="./work_series.html" target="_blank" class="btn-more">
             VIEW MORE
             <img src="./assets/images/arrow_right.svg" alt="더보기 버튼">
           </a>
         </div>
         <div class="cont_right">
-          <a href="./work_series.html" target="_blank"><img src="./assets/images/series.png" alt="시리즈 이미지"></a>
+          <a href="./work_series.html" target="_blank"><img src="./assets/images/pf_series.png" alt="시리즈"></a>
         </div>
       </div>
     </div>
   </section>
 
   <section id="contact" class="contact">
-    <div class="wrap">
+    <div class="inner">
       <img class="tape" src="./assets/images/tape.svg" alt="">
       <h2>CONTACT ME</h2>
       <div class="row1">
@@ -264,7 +277,7 @@
           <p>GITHUB</p>
 
           <div class="folder">
-            <div class="wrap">
+            <div class="inner">
               <img class="default" src="./assets/images/folder_github.png" alt="">
 
               <div class="hover">
@@ -282,7 +295,7 @@
           <p>BEHANCE</p>
           
           <div class="folder">
-            <div class="wrap">
+            <div class="inner">
               <img class="default" src="./assets/images/folder_behance.png" alt="">
               
               <div class="hover">
@@ -300,7 +313,7 @@
           <p>YOUTUBE</p>
           
           <div class="folder">
-            <div class="wrap">
+            <div class="inner">
               <img class="default" src="./assets/images/folder_youtube.png" alt="">
               
               <div class="hover">
@@ -318,7 +331,7 @@
           <p>BLOG</p>
           
           <div class="folder">
-            <div class="wrap">
+            <div class="inner">
               <img class="default" src="./assets/images/folder_blog.png" alt="">
               
               <div class="hover">
@@ -340,7 +353,7 @@
           <p>MAIL</p>
           
           <div class="folder">
-            <div class="wrap">
+            <div class="inner">
               <img class="default" src="./assets/images/folder_mail.png" alt="">
               
               <div class="hover">
@@ -358,7 +371,7 @@
           <p>INSTAGRAM</p>
           
           <div class="folder">
-            <div class="wrap">
+            <div class="inner">
               <img class="default" src="./assets/images/folder_instagram.png" alt="">
               
               <div class="hover">
