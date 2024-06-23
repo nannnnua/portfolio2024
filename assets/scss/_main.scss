@@ -97,7 +97,7 @@
     height: 186px;
     background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, #111 100%);
     position: absolute;
-    bottom: 90px;
+    bottom: 0;
     z-index: -1;
   }
 
@@ -162,8 +162,8 @@
 
 #skills_sec {
   background: #111;
-  height: 1058px;
-  padding-top: 90px;
+  height: 1148px;
+  padding: 90px 0;
 
   .inner {
     position: relative;
